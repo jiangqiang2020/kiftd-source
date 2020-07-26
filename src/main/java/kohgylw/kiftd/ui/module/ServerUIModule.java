@@ -63,16 +63,16 @@ public class ServerUIModule extends KiftdDynamicWindow {
 		ServerUIModule.window.setLocation(100, 100);
 		ServerUIModule.window.setResizable(false);
 		try {
-			ServerUIModule.window.setIconImage(ImageIO.read(this.getClass().getResourceAsStream("/icon.png")));
+			ServerUIModule.window.setIconImage(ImageIO.read(this.getClass().getResourceAsStream("/ui/icon.png")));
 		} catch (NullPointerException ex) {
 		} catch (IOException ex2) {
 		}
 		if (SystemTray.isSupported()) {
 			ServerUIModule.window.setDefaultCloseOperation(1);
 			ServerUIModule.tray = SystemTray.getSystemTray();
-			String iconType = "/icon_tray.png";
+			String iconType = "/ui/icon_tray.png";
 			if (System.getProperty("os.name").toLowerCase().indexOf("window") >= 0) {
-				iconType = "/icon_tray_w.png";
+				iconType = "/ui/icon_tray_w.png";
 			}
 			(ServerUIModule.trayIcon = new TrayIcon(ImageIO.read(this.getClass().getResourceAsStream(iconType))))
 					.setToolTip("青阳网络文件系统-kiftd");
