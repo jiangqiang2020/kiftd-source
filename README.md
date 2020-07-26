@@ -1,7 +1,8 @@
 ## 欢迎访问kiftd源代码资源库！
 ### Welcome to visit source of kiftd!
 
-_当前版本：v1.0.35-RELEASE_
+注意：此仓库是基于kiftd v1.0.35-RELEASE源码构建，原作者青阳龙野@kohgylw，[原仓库地址](https://github.com/KOHGYLW/kiftd-source#%E6%AC%A2%E8%BF%8E%E8%AE%BF%E9%97%AEkiftd%E6%BA%90%E4%BB%A3%E7%A0%81%E8%B5%84%E6%BA%90%E5%BA%93)。
+原项目是使用eclipse进行开发，本人修改了少许目录结构，使之可以在IDEA上运行，仅学习使用。
 
 ### 简介
 _kiftd——一款便捷、开源、功能完善的个人&团队&小型团队网盘服务器系统。_
@@ -24,7 +25,7 @@ _下列条目为kiftd开发环境的基本信息，如需对源代码进行查�
 + 项目资源及配置：Spring Boot+MyBatis+H2 DB，详见pom.xml文档。
 
 ### 快速开始
-+ 使用Eclipse(javaEE)以项目方式导入本资源文件夹，并设置构建路径中的JDK版本。
++ 使用IDEA以项目方式导入本资源文件夹，并设置构建路径中的JDK版本。
 + 使用Maven选项更新项目，并确保pom文件中引入的所有外部资源能够正确引入至本地。
 + 打开kohgylw.kiftd.mc.MC类，进行测试运行。
 + 右键项目，执行Run with选项中的Maven install操作以在target文件夹内编译生成jar程序。
